@@ -1,0 +1,6 @@
+<h1>Meetups in Spaaaaaaaace</h1>
+<ul>
+  <% @meetups.each do |meetup| %>
+    <li><%= link_to meetup.name, meetup_path(meetup) %></li>
+  <% end %>
+</ul>
